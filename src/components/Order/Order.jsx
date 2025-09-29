@@ -1,7 +1,7 @@
 import React from 'react';
 import './Order.css';
 import { format, fromUnixTime } from 'date-fns';
-import CheckoutProduct from '../../../../../amazon-clone(1)/amazon-clone/amazon-clone-modern/src/components/CheckoutProduct';
+import CheckoutProduct from '../CheckoutProduct';
 import { NumericFormat } from 'react-number-format';
 
 function Order({ order }) {
