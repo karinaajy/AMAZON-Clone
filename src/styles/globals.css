@@ -1,0 +1,29 @@
+/* Amazon Clone - Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(234, 237, 237);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  background-color: rgb(234, 237, 237);
+}
+
+/* Amazon Brand Colors */
+:root {
+  --amazon-orange: #ff9900;
+  --amazon-blue: #232f3e;
+  --amazon-yellow: #f0c14b;
+  --amazon-light-gray: rgb(234, 237, 237);
+  --amazon-dark-gray: #131921;
+}
