@@ -5,7 +5,7 @@ import CheckoutProduct from '../../components/CheckoutProduct'
 import { Link, useNavigate } from 'react-router-dom'
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import { NumericFormat } from 'react-number-format'
-import axios from '../../../../../amazon-clone(1)/amazon-clone/amazon-clone-modern/src/utils/axios'
+import axios from '../../utils/axios'
 import { db } from '../../supabase'
 
 function Payment() {
