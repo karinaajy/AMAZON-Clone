@@ -11,7 +11,6 @@ import Checkout from './pages/Checkout'
 import Login from './pages/Login'
 import Orders from './pages/Orders'
 import Payment from './pages/Payment'
-import ErrorBoundary from './components/ErrorBoundary'
 
 // Stripe公钥
 const stripePromise = loadStripe('pk_test_51S8ZOBGyrVlk5VQvz8Aj10dSBHJOMrCc4J12vda8Y8i014051jIfpFm68Je8ifLX2McRzGqFC24o7qffFUazV4Zn003nHZjp5f');
@@ -50,11 +49,9 @@ function App() {
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/payment" element={
-                  <ErrorBoundary>
-                    <Elements stripe={stripePromise}>
-                      <Payment />
-                    </Elements>
-                  </ErrorBoundary>
+                  <Elements stripe={stripePromise}>
+                    <Payment />
+                  </Elements>
                 } />
               </Routes>
             </>
